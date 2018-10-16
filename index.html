@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculatrice Comgepu</title>
+		<link rel="stylesheet" type="text/css" href="calculatrice.css">
+	</head>
+	<body>
+		<div id="cadre">
+			<table>
+				<tr>
+					<td colspan="4"><input type="text" id="resultat" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td colspan="4"><input type="text" id="affichage" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="7" onclick="affichage(a=this.value)"></td>
+					<td><input type="button" value="8" onclick="affichage(a=this.value)"></td>
+					<td><input type="button" value="9" onclick="affichage(a=this.value)"></td>
+					<td><input type="button" value="+" onclick="affichage(a=this.value)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="4" onclick="affichage(a=this.value)"></td>
+					<td><input type="button" value="5" onclick="affichage(a=this.value)"></td>
+					<td><input type="button" value="6" onclick="affichage(a=this.value)"></td>
+					<td><input type="button" value="-" onclick="affichage(a=this.value)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="1" onclick="affichage(a=this.value)"></td>
+					<td><input type="button" value="2" onclick="affichage(a=this.value)"></td>
+					<td><input type="button" value="3" onclick="affichage(a=this.value)"></td>
+					<td><input type="button" value="*" onclick="affichage(a=this.value)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="C" onclick="raz()"></td>
+					<td><input type="button" value="0" onclick="affichage(a=this.value)"></td>
+					<td><input type="button" value="=" onclick="egal()"></td>
+					<td><input type="button" value="/" onclick="affichage(a=this.value)"></td>
+				</tr>
+			</table>
+		</div>
+		<h1>Calculapeine</h1>
+		<p>@ Copyright DonJunior</p>
+
+		<script type="text/javascript">
+			function affichage()
+			{
+				document.getElementById('affichage').value = document.getElementById('affichage').value + a;
+			}
+
+			function egal()
+			{	
+				document.getElementById('resultat').value = eval(document.getElementById('affichage').value);
+			}
+
+			function raz()
+			{
+				document.getElementById('resultat').value = null;
+				document.getElementById('affichage').value = null;
+			}
+		</script>
+	</body>
+</html>

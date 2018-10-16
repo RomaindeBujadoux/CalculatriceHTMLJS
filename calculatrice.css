@@ -1,0 +1,92 @@
+/* Définition de police personnalisée */
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body
+{
+	background-image: url(matrix.jpg);
+}
+#cadre
+ {
+ 	margin: auto;
+ 	padding-top: 20px;
+ 	padding-left: 17px;
+ 	margin-bottom: 30px;
+ 	background-color: black;
+ 	border-radius: 5px;
+ 	width: 420px;
+	height: 520px;
+ }
+
+  table
+{
+	background-color: #35862B;
+	width: 400px;
+	height: 500px;
+}
+
+input
+{
+	background-color: black;
+	border: none;
+	border-radius: 5px;
+	color: #B9B1B0;
+	font-size: 1.5em;
+	font-weight: bold;
+	height: 85%;
+	width: 99%;
+}
+
+td
+{
+	width: 25%;
+}
+
+#resultat, #affichage
+{
+	opacity: 0.80;
+	text-align: right;
+	padding-right: 5px;
+	font-size: 2em;
+}
+
+h1
+{
+	background-color: black;
+	margin-top: 50px;
+	width: 40%;
+	min-width: 350px;
+	margin: auto;
+	padding:5px 0 5px 0;
+	text-align: center;
+	color: #35862B;
+	font-weight: normal;
+	font-size: 3.2em;
+	text-decoration: underline;
+	font-family: 'BallparkWeiner', serif;
+}
+
+p
+{
+	text-align: center;
+	color : black;
+	font-weight: bold;
+	background-color: #35862B;
+	width: 35%;
+	max-width: 140px;
+	min-width: 135px;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
